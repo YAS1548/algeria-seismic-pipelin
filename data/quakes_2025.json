@@ -1,0 +1,661 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1793732129000,
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2025-01-01&endtime=2025-12-31&minlatitude=18&maxlatitude=38&minlongitude=-9&maxlongitude=12.5&minmagnitude=3",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "2.8.4",
+    "count": 16
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.1,
+        "place": "19 km N of Meknès, Morocco",
+        "time": 1766616206824,
+        "updated": 1775083734040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000rq4y",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000rq4y&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 259,
+        "net": "us",
+        "code": "7000rq4y",
+        "ids": ",us7000rq4y,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 19,
+        "dmin": 1.373,
+        "rms": 0.8,
+        "gap": 125,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.1 - 19 km N of Meknès, Morocco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5488,
+          34.0687,
+          10
+        ]
+      },
+      "id": "us7000rq4y"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.4,
+        "place": "3 km ESE of Fuengirola, Spain",
+        "time": 1764927514929,
+        "updated": 1772649877040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000rfrj",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000rfrj&format=geojson",
+        "felt": 5,
+        "cdi": 3.3,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 299,
+        "net": "us",
+        "code": "7000rfrj",
+        "ids": ",us7000rfrj,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 29,
+        "dmin": 3.022,
+        "rms": 0.97,
+        "gap": 78,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.4 - 3 km ESE of Fuengirola, Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5893,
+          36.5232,
+          58.514
+        ]
+      },
+      "id": "us7000rfrj"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.3,
+        "place": "29 km S of El Ejido, Spain",
+        "time": 1761773900381,
+        "updated": 1769536749040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000rp62",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000rp62&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 284,
+        "net": "us",
+        "code": "6000rp62",
+        "ids": ",us6000rp62,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 35,
+        "dmin": 3.285,
+        "rms": 0.63,
+        "gap": 123,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.3 - 29 km S of El Ejido, Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8188,
+          36.5109,
+          10
+        ]
+      },
+      "id": "us6000rp62"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.5,
+        "place": "22 km ESE of Tazoult-Lambese, Algeria",
+        "time": 1760885611556,
+        "updated": 1767973126040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000rm5j",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000rm5j&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 312,
+        "net": "us",
+        "code": "6000rm5j",
+        "ids": ",us6000rm5j,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 38,
+        "dmin": 2.339,
+        "rms": 0.99,
+        "gap": 151,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.5 - 22 km ESE of Tazoult-Lambese, Algeria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4989,
+          35.4394,
+          10
+        ]
+      },
+      "id": "us6000rm5j"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.3,
+        "place": "45 km WNW of Tamaghzah, Tunisia",
+        "time": 1758228834567,
+        "updated": 1765036811040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000rg84",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000rg84&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 284,
+        "net": "us",
+        "code": "6000rg84",
+        "ids": ",us6000rg84,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 19,
+        "dmin": 1.94,
+        "rms": 0.5,
+        "gap": 195,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.3 - 45 km WNW of Tamaghzah, Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4845,
+          34.5308,
+          10
+        ]
+      },
+      "id": "us6000rg84"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.5,
+        "place": "43 km WSW of Oukaïmedene, Morocco",
+        "time": 1756869959350,
+        "updated": 1764545970040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000qtep",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000qtep&format=geojson",
+        "felt": 40,
+        "cdi": 4.6,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 330,
+        "net": "us",
+        "code": "7000qtep",
+        "ids": ",us7000qtep,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 36,
+        "dmin": 0.874,
+        "rms": 0.72,
+        "gap": 156,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.5 - 43 km WSW of Oukaïmedene, Morocco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2571,
+          31.0111,
+          9.076
+        ]
+      },
+      "id": "us7000qtep"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.2,
+        "place": "33 km WNW of Tamaghzah, Tunisia",
+        "time": 1756571801528,
+        "updated": 1763589575040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000rck6",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000rck6&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 271,
+        "net": "us",
+        "code": "6000rck6",
+        "ids": ",us6000rck6,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 38,
+        "dmin": 1.841,
+        "rms": 0.82,
+        "gap": 128,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.2 - 33 km WNW of Tamaghzah, Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6272,
+          34.5429,
+          10
+        ]
+      },
+      "id": "us6000rck6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.5,
+        "place": "42 km W of Chebika, Tunisia",
+        "time": 1755458561123,
+        "updated": 1762274632040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000r1rl",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000r1rl&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 312,
+        "net": "us",
+        "code": "6000r1rl",
+        "ids": ",us6000r1rl,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 51,
+        "dmin": 2.076,
+        "rms": 0.94,
+        "gap": 94,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.5 - 42 km W of Chebika, Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.478,
+          34.329,
+          10
+        ]
+      },
+      "id": "us6000r1rl"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "47 km W of Chebika, Tunisia",
+        "time": 1755457861981,
+        "updated": 1762274632040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000r1rj",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000r1rj&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 400,
+        "net": "us",
+        "code": "6000r1rj",
+        "ids": ",usauto6000r1rj,us6000r1rj,",
+        "sources": ",usauto,us,",
+        "types": ",internal-moment-tensor,moment-tensor,origin,phase-data,",
+        "nst": 119,
+        "dmin": 2.074,
+        "rms": 0.63,
+        "gap": 56,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.1 - 47 km W of Chebika, Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4276,
+          34.3778,
+          10
+        ]
+      },
+      "id": "us6000r1rj"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.2,
+        "place": "23 km E of San Jos?, Spain",
+        "time": 1752470008590,
+        "updated": 1764364211694,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000qcif",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000qcif&format=geojson",
+        "felt": 96,
+        "cdi": 4.9,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 463,
+        "net": "us",
+        "code": "7000qcif",
+        "ids": ",us7000qcif,usauto7000qcif,",
+        "sources": ",us,usauto,",
+        "types": ",dyfi,earthquake-name,impact-text,internal-moment-tensor,origin,phase-data,",
+        "nst": 139,
+        "dmin": 3.367,
+        "rms": 0.5,
+        "gap": 42,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.2 - 23 km E of San Jos?, Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8443,
+          36.7449,
+          10
+        ]
+      },
+      "id": "us7000qcif"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.8,
+        "place": "26 km W of Oulmes, Morocco",
+        "time": 1747999000499,
+        "updated": 1755098071040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000q11t",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000q11t&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 222,
+        "net": "us",
+        "code": "7000q11t",
+        "ids": ",us7000q11t,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 21,
+        "dmin": 0.953,
+        "rms": 1,
+        "gap": 84,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 3.8 - 26 km W of Oulmes, Morocco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2869,
+          33.4409,
+          10
+        ]
+      },
+      "id": "us7000q11t"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.4,
+        "place": "24 km WSW of Mezzouna, Tunisia",
+        "time": 1744228561788,
+        "updated": 1749925598040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000q4ze",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000q4ze&format=geojson",
+        "felt": 2,
+        "cdi": 4.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 299,
+        "net": "us",
+        "code": "6000q4ze",
+        "ids": ",us6000q4ze,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 54,
+        "dmin": 1.251,
+        "rms": 0.67,
+        "gap": 102,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.4 - 24 km WSW of Mezzouna, Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5924,
+          34.4944,
+          10
+        ]
+      },
+      "id": "us6000q4ze"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.4,
+        "place": "76 km S of Faro, Portugal",
+        "time": 1742793532482,
+        "updated": 1748540190040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000pm5x",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000pm5x&format=geojson",
+        "felt": 2,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 298,
+        "net": "us",
+        "code": "7000pm5x",
+        "ids": ",us7000pm5x,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 77,
+        "dmin": 1.099,
+        "rms": 0.58,
+        "gap": 74,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.4 - 76 km S of Faro, Portugal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8911,
+          36.3295,
+          10
+        ]
+      },
+      "id": "us7000pm5x"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.8,
+        "place": "19 km SW of Lakhdaria, Algeria",
+        "time": 1742291426946,
+        "updated": 1747509600040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000pzjl",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000pzjl&format=geojson",
+        "felt": 34,
+        "cdi": 5.2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 372,
+        "net": "us",
+        "code": "6000pzjl",
+        "ids": ",us6000pzjl,",
+        "sources": ",us,",
+        "types": ",dyfi,moment-tensor,origin,phase-data,",
+        "nst": 167,
+        "dmin": 3.516,
+        "rms": 0.51,
+        "gap": 55,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 4.8 - 19 km SW of Lakhdaria, Algeria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4384,
+          36.4349,
+          10
+        ]
+      },
+      "id": "us6000pzjl"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "25 km N of Ouezzane, Morocco",
+        "time": 1739227721585,
+        "updated": 1780086544111,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000pcsb",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000pcsb&format=geojson",
+        "felt": 435,
+        "cdi": 5.5,
+        "mmi": 4.145,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 639,
+        "net": "us",
+        "code": "7000pcsb",
+        "ids": ",us7000pcsb,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,shakemap,",
+        "nst": 75,
+        "dmin": 1.547,
+        "rms": 0.43,
+        "gap": 72,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.1 - 25 km N of Ouezzane, Morocco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5251,
+          35.0177,
+          29.521
+        ]
+      },
+      "id": "us7000pcsb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.7,
+        "place": "20 km W of Mezzouna, Tunisia",
+        "time": 1738575905331,
+        "updated": 1744750530040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000pazv",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000pazv&format=geojson",
+        "felt": 2,
+        "cdi": 7.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 341,
+        "net": "us",
+        "code": "7000pazv",
+        "ids": ",us7000pazv,",
+        "sources": ",us,",
+        "types": ",dyfi,impact-text,moment-tensor,origin,phase-data,",
+        "nst": 105,
+        "dmin": 1.208,
+        "rms": 0.71,
+        "gap": 38,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 4.7 - 20 km W of Mezzouna, Tunisia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6249,
+          34.5424,
+          10
+        ]
+      },
+      "id": "us7000pazv"
+    }
+  ],
+  "bbox": [
+    -8.2571,
+    31.0111,
+    9.076,
+    9.6249,
+    36.7449,
+    58.514
+  ]
+}
