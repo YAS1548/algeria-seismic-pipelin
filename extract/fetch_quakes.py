@@ -5,56 +5,33 @@ from collections import  Counter  #outil pour compter combien de fois chaque val
 from datetime import datetime, timezone
 from pathlib import Path # outil pour gérer des dossiers et des chemins
 
-import requests #outils pour appler une adresse web 
 
-URL = "https://earthquake.usgs.gov/fdsnws/event/1/query"  # adresse de l'API de l'USGS
 
-# utiliser une fonction pour reutiliser lee code
+with open("data/quakes_2000_2025.json", encoding="utf-8") as fichier:
+    data = json.load(fichier)
 
-def fetch_quakes(starttime, endtime):
-    params = {
-      "format": "geojson",
-      "starttime": starttime,
-      "endtime": endtime,
-      "minlatitude": 18,
-      "maxlatitude": 38,
-      "minlongitude": -9,
-      "maxlongitude": 12.5,
-      "minmagnitude": 3,
 
-     }
-
-    response = requests.get(URL, params=params, timeout=30)
-    response.raise_for_status()    
-    return response.json()
-
-#---------
-data = fetch_quakes("2000-01-01", "2025-12-31")
 features = data["features"]
-print("Nombre de séisme:", len(features))
 
 
-par_annee = Counter()
-for f in features:
-    date = datetime.fromtimestamp(f["properties"]["time"]/ 1000, timezone.utc) # convertit "time" en vraie date
-    par_annee[date.year] += 1 # ajoute 1 au compteur de l'année de ce séisme
 
-for annee in sorted(par_annee): #parcours les annee dans lordre croissannt
-    print(annee, ":", par_annee[annee], "séisme")    
+for annee in [2003, 2004, 2009]:  # on répète ce qui suit pour chacune de ces années
+    pays = Counter()  # un compteur vide pour compter les séismes par pays
+    plus_fort = None  # on garde ici le séisme le plus fort (vide au début)
 
+    for f in features:  # on parcourt tous les séismes
+        props = f["properties"]  # raccourci vers les informations du séisme
+        date = datetime.fromtimestamp(props["time"] / 1000, timezone.utc)  # convertit "time" en vraie date
+        if date.year != annee:  # si le séisme n'est pas de l'année étudiée
+            continue  # on passe directement au séisme suivant
 
-#-----Compter ceux qui mentionnent lalgerie
-nb_algerie = 0
-for f in features:
-    lieu = f["properties"]["place"] or ""
-    if "Algeria" in lieu:
-        nb_algerie += 1
-print("Dont mentionnent l'Algérie :", nb_algerie)
+        lieu = props["place"] or ""  # le lieu ; texte vide s'il est absent
+        nom_pays = lieu.split(",")[-1].strip()  # garde ce qui suit la dernière virgule (le pays) et enlève les espaces
+        pays[nom_pays] += 1  # ajoute 1 au compteur de ce pays
 
-#-----sauvegarde dans un fichier
+        mag = props["mag"]  # la magnitude de ce séisme
+        if mag is not None and (plus_fort is None or mag > plus_fort[0]):  # si c'est le plus fort vu jusqu'ici
+            plus_fort = (mag, lieu)  # on retient sa magnitude et son lieu
 
-Path("data").mkdir(exist_ok=True) # crée le dossier "data" s'il n'existe pas
-with open ("data/quakes_2000_2025.json", "w", encoding="utf-8") as fichier:
-    json.dump(data, fichier, ensure_ascii=False, indent=2)
-
-print("Fichier enregistré : data/quakes_2000_2025.json")
+    print(annee, "| par pays :", dict(pays))  # affiche le nombre de séismes par pays
+    print(annee, "| plus fort :", plus_fort)  # affiche le séisme le plus fort de l'année
