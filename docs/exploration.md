@@ -24,10 +24,18 @@
 - Seulement 2 sur 16 mentionnent l'Algérie : il faudra filtrer
 - beaucoup plus d’événements avant : à comprendre (séisme majeur et répliques ? zone trop large ?)
 
-##  Remarque :pics en 2003-2005, chute en 2009 : à expliquer...
+##  Remarque :pics en 2003-2005, chute en 2009 : à explique
 2003 | par pays : {'Algeria': 255, 'Spain': 29, 'Morocco': 13, 'Tunisia': 3, 'northern Algeria': 5, 'western Mediterranean Sea': 1, 'Portugal': 1}
 2003 | plus fort : (6.8, '25 km WNW of Dellys, Algeria')
 2004 | par pays : {'Spain': 16, 'Morocco': 879, 'Algeria': 53, 'Strait of Gibraltar': 16, 'Tunisia': 1, 'Portugal': 11}
 2004 | plus fort : (6.4, '11 km SSW of Tirhanimîne, Morocco')
 2009 | par pays : {'Algeria': 6, 'Morocco': 2, 'Portugal': 2}
 2009 | plus fort : (4.9, '48 km ENE of Aïn Sefra, Algeria')
+
+## Ce que j'ai découvert en analysant les pics
+- 2003 : pic dû au séisme de Boumerdès (M6.8, Algérie) et à ses répliques
+- 2004 : 879 séismes sur 976 au Maroc (M6.4 près d'Al Hoceima)
+- 2009 : retour à la normale (10 séismes)
+- 2005-2008 : environ 175 par an, pas encore expliqué
+- Le champ "place" est incohérent (Algeria / northern Algeria / mer) : filtrer par coordonnées
+- Décision : garder toutes les données brutes et filtrer dans une couche séparée
