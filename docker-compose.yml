@@ -1,0 +1,14 @@
+services:                               # la liste des "services" (programmes) à lancer
+  db:                                   # le nom de notre service : la base de données
+    image: postgres:16                  # le programme à utiliser : PostgreSQL version 16, téléchargé par Docker
+    container_name: seismic_db          # le nom du conteneur, pour le retrouver facilement
+    environment:                        # les réglages de départ
+      POSTGRES_USER: seismic            # le nom d'utilisateur de la base
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  # le mot de passe, lu dans votre fichier .env
+      POSTGRES_DB: seismic              # le nom de la base créée au démarrage
+    ports:                              # relie un port de votre PC à celui du conteneur
+      - "5432:5432"                     # port habituel de PostgreSQL
+    volumes:                            # un espace de stockage qui garde vos données
+      - pgdata:/var/lib/postgresql/data # sans lui, les données disparaîtraient à l'arrêt du conteneur
+volumes:                                # déclare le stockage utilisé ci-dessus
+  pgdata:                               # son nom
